@@ -1,0 +1,245 @@
+.reviews {
+    position: relative;
+
+    width: 320px;
+    margin: 0 auto;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        bottom: 0;
+
+        width: 100%;
+        height: 6px;
+
+        background-image: url(../../img/zigzag-popular.png);
+        background-repeat: repeat-x;
+    }
+}
+
+.reviews__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 30px;
+}
+
+.reviews__title {
+    @include indents;
+
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+
+    margin-top: 55px;
+    margin-bottom: 30px;
+}
+
+.reviews__text {
+    @include indents;
+
+    font-size: 15px;
+    line-height: 30px;
+    color: $bg-border-btn;
+
+    margin-bottom: 30px;
+}
+
+.reviews__contact {
+    @include indents;
+
+    font-weight: bold;
+
+    margin-bottom: 30px;
+
+    &--email {
+        line-height: 30px;
+        font-weight: normal;
+    }
+}
+
+.reviews__link {
+    @include indents;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.reviews__arrow {
+    position: relative;
+
+    font-size: 0;
+
+    width: 50%;
+    min-height: 50px;
+    margin-bottom: 35px;
+
+    border: 1px solid $bg-border;
+
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 13px;
+        left: 38px;
+
+        width: 50px;
+        height: 26px;
+
+        background-repeat: no-repeat;
+    }
+
+    &--left::before {
+        background-image: url(../../img/arrow-left.png);
+    }
+
+    &--right::before {
+        background-image: url(../../img/arrow-right.png);
+    }
+
+    &:hover::before {
+        opacity: 0.6;
+    }
+
+    &:active::before {
+        opacity: 0.3;
+    }
+}
+
+.reviews__button {
+    padding: 15px 0;
+    margin-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+    .reviews {
+        width: 768px;
+        padding: 0 50px;
+
+        margin-top: 80px;
+        
+        &::before {
+            content: "";
+
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+
+            width: 350px;
+            height: 457px;
+
+            background-image: url(../../img/review-tablet.jpg);
+            background-repeat: no-repeat;
+        }
+
+        &::after {
+            left: 0;
+
+            height: 17px;
+
+            background-image: url(../../img/zigzag-popular-tablet.png);
+        }
+    }
+
+    .reviews__wrapper {
+        padding: 0;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .reviews__title {
+        order: 1;
+
+        font-size: 43px;
+        line-height: 50px;
+
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    .reviews__text {
+        order: 3;
+
+        font-size: 17px;
+
+        padding-right: 30px;
+        margin-bottom: 60px;
+    }
+
+    .reviews__contact {
+        order: 4;
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 130px;
+
+        &--name {
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+
+    .reviews__link {
+        order: 5;
+        width: 170px;
+
+        margin-left: auto;
+    }
+
+    .reviews__arrow {
+        border: none;
+
+        &::before {
+            top: 20px;
+            left: 20px;
+        }
+    }
+
+    .reviews__button {
+        order: 2;
+        
+        padding: 15px 40px;
+        margin-left: auto;
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .reviews {
+        width: 1150px;
+        padding: 0;
+
+        &::after {
+            height: 23px;
+
+            background-image: url(../../img/zigzag-popular-desktop.png);
+        }
+    }
+
+    .reviews__wrapper {
+        padding-left: 225px;
+        padding-right: 50px;
+    }
+
+    .reviews__title {
+        font-size: 53px;
+        line-height: 57px;
+    }
+
+    .reviews__text {
+        padding-right: 100px;
+        margin-bottom: 40px;
+    }
+
+    .reviews__contact {
+        margin-bottom: 170px;
+    }
+
+    .reviews__button {
+        margin-top: 85px;
+    }
+}

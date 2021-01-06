@@ -1,0 +1,21 @@
+$color-text: #000000;
+$bg-header: #f9f9f9;
+$bg-footer: #f1f1f1;
+$bg-border: #ececec;
+$bg-border-btn: #444444;
+$text-color-form: #63d1bb;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$mobile-width-only: 767px;
+
+@mixin indents {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin list-style {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}

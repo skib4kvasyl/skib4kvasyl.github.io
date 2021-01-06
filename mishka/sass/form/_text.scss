@@ -1,0 +1,91 @@
+.interdiction__conteiner {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.interdiction__title {
+    @include indents;
+
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+
+    padding: 75px 0;
+
+    background-color: $bg-header;
+}
+
+.interdiction__text {
+    @include indents;
+
+    font-size: 13px;
+    line-height: 24px;
+    color: $bg-border-btn;
+
+    padding: 25px 30px;
+}
+
+@media (min-width: $tablet-width) {
+    .interdiction__conteiner {
+        position: relative;
+
+        width: 768px;
+
+        &::after {
+            content: "";
+            
+            position: absolute;
+            bottom: 120px;
+            left: 0;
+
+            width: 100%;
+            height: 24px;
+
+            background-image: url(../../img/zigzag-catalog-tablet.png);
+            background-repeat: repeat-x;
+        }
+    }
+
+    .interdiction__title {
+        font-size: 43px;
+        line-height: 50px;
+
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    .interdiction__text {
+        font-size: 17px;
+        line-height: 30px;
+
+        padding: 0 50px;
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .interdiction__conteiner {
+        width: 1150px;
+
+        &::after {
+            bottom: 165px;
+
+            height: 34px;
+
+            background-image: url(../../img/zigzag-catalog-desktop.png);
+        }
+    }
+
+    .interdiction__title {
+        font-size: 53px;
+        line-height: 57px;
+
+        padding-bottom: 110px;
+    }
+
+    .interdiction__text {
+        padding-top: 125px;
+        margin: 0 175px;
+    }
+}

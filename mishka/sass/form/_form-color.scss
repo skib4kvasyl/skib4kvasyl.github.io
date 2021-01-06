@@ -1,0 +1,128 @@
+.page-form__color-conteiner {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.page-form__title {
+    margin-top: 40px;
+}
+
+.page-form__list-color {
+    @include list-style;
+}
+
+.list-color {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.list-color__item {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+
+    margin-bottom: 45px;
+}
+
+.list-color__checkbox {
+    position: relative;
+
+    padding-left: 65px;
+
+    cursor: pointer;
+}
+
+.list-color__checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+
+    border: 2px solid $bg-border-btn;
+}
+
+.list-color__checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 7px;
+
+    width: 22px;
+    height: 16px;
+
+    background-image: url(../../img/point.svg);
+    background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+    .page-form__color {
+        background-color: $bg-footer;
+    }
+
+    .page-form__color-conteiner {
+        flex-direction: row;
+        padding: 0 50px;
+    }
+
+    .page-form__title {
+        margin-top: 65px;
+    }
+
+    .list-color {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 501px;
+        margin-top: 60px;
+        margin-bottom: 15px;
+    }
+
+    .list-color__item {
+        width: 50%;
+
+        font-size: 19px;
+        line-height: 19px;
+
+        margin-bottom: 50px;
+    }
+
+    .list-color__checkbox {
+        padding-left: 80px;
+    }
+
+    .list-color__checkbox input[type="checkbox"] + .checkbox-indicator {
+        width: 54px;
+        height: 52px;
+
+        margin-top: -27px;
+    }
+
+    .list-color__checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+        top: 14px;
+        left: 11px;
+        
+        width: 33px;
+        height: 22px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .list-color {
+        width: 875px;
+    }
+
+    .list-color__item  {
+        width: 33%;
+        margin-bottom: 60px;
+    }
+}

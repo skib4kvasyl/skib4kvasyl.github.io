@@ -1,0 +1,176 @@
+.page-form__contacts {
+    padding: 0 30px;
+    margin-top: 10px;
+}
+
+.page-form__contacts-conteiner {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-form__data {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-form__data .page-form__title {
+    margin-top: 0;
+}
+
+.page-form__data .page-form__title--right {
+    margin-top: 30px;
+
+    &::after {
+        width: 180px;
+    }
+}
+
+.page-form__number {
+    @include indents;
+
+    position: relative;
+
+    margin-top: 10px;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 15px;
+        right: 8px;
+
+        width: 25px;
+        height: 24px;
+
+        background-image: url(../../img/number-icon.svg);
+        background-repeat: no-repeat;
+
+        opacity: 0.2;
+    }
+
+    &:hover::after {
+        background-image: url(../../img/number-icon-hover.svg);
+       
+        opacity: 1;
+    }
+}
+
+.page-form__email {
+    @include indents;
+
+    position: relative;
+
+    margin-top: 10px;
+
+    &::after {
+        content: "";
+
+        position: absolute;
+        top: 15px;
+        right: -5px;
+
+        width: 32px;
+        height: 21px;
+
+        background-image: url(../../img/email-icon.svg);
+        background-repeat: no-repeat;
+
+        opacity: 0.2;
+    }
+
+    &:hover::after {
+        background-image: url(../../img/email-icon-hover.svg);
+       
+        opacity: 1;
+    }
+}
+
+.page-form__number--icon,
+.page-form__email--icon {    
+    font: inherit;
+    font-size: 17px;
+    line-height: 18px;
+
+    width: 100%;
+    padding: 15px 0;
+    padding-right: 50px;
+
+    border: none;
+    border-bottom: 2px solid $color-text;
+
+    outline: none;
+
+    &:focus {
+        border-bottom: 2px solid #62d1ba;
+    }
+
+    &:active {
+        border-bottom: 2px solid #62d1ba;
+    }
+
+    &::placeholder {
+        font: inherit;
+        color: $bg-border-btn;
+
+        opacity: 0.3;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .page-form__contacts {
+        padding: 0;
+        margin-top: 0;
+
+        background-color: $bg-footer;
+    }
+
+    .page-form__contacts-conteiner {
+        padding: 0 50px;
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .page-form__data {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .page-form__data {
+        margin-bottom: 20px;
+    }
+
+    .page-form__data .page-form__title--right {
+        margin-top: 0;
+    }
+
+    .page-form__number,
+    .page-form__email {
+        width: 501px;
+    }
+
+    .page-form__number--icon,
+    .page-form__email--icon {
+        font-size: 19px;
+        line-height: 19px;
+
+        padding-left: 20px;
+
+        background-color: transparent;
+
+        &::placeholder {
+            font-size: 19px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .page-form__number,
+    .page-form__email {
+        width: 750px;
+    }
+
+    .page-form__data .page-form__title--right {
+        padding-left: 25px;
+    }
+}

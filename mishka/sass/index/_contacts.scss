@@ -1,0 +1,237 @@
+.contacts {
+    width: 320px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__wrapper {
+    padding: 0 30px;
+}
+
+.contacts__title {
+    @include indents;
+
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contacts__data {
+    @include indents;
+
+    font-size: 15px;
+    line-height: 30px;
+    color: $bg-border-btn;
+
+    & tbody {
+        display: flex;
+        flex-direction: column;
+
+        border-collapse: collapse;
+    }
+}
+
+.contacts__email {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+
+    & td:first-child {
+        text-align: left;
+    }
+
+    & td:last-child {
+        text-align: right;
+
+        border-bottom: 1px solid #62d1ba;
+
+        &:hover {
+            color: #46c1ae;
+
+            border-bottom: 1px solid #46c1ae;
+        }
+
+        &:active {
+            color: #46c1ae;
+            
+            border-bottom: 1px solid #46c1ae;
+
+            opacity: 0.3;
+        }
+    }
+}
+
+.contacts__address {
+    display: flex;
+    justify-content: space-between;
+
+    & td:first-child {
+        margin-right: 30px;
+        text-align: left;
+    }
+
+    & td:last-child {
+        padding-right: 35px;
+    }
+}
+
+.contacts__map {
+    @include indents;
+
+    font-size: 0;
+
+    height: 457px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    background-image: url(../../img/map-mobile.jpg);
+    background-repeat: no-repeat;;
+}
+
+.contacts__button {
+    margin: 0 30px;
+    padding: 15px 0;
+}
+
+@media (min-width: $tablet-width) {
+    .contacts {
+        width: 768px;
+    }
+
+    .contacts__wrapper {
+        padding: 0;
+    }
+
+    .contacts__title {
+        position: relative;
+
+        font-size: 43px;
+        line-height: 50px;
+
+        margin-top: 70px;
+        margin-bottom: 60px;
+        margin-right: 50px;
+
+        &::after {
+            content: "";
+
+            position: absolute;
+            top: -20px;
+            right: 20px;
+
+            width: 47px;
+            height: 81px;
+
+            background-image: url(../../img/flag.svg);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .contacts__data {
+        margin: 0 50px;
+        margin-left: 0;
+
+        font-size: 17px;
+
+        & tbody {
+            flex-direction: row;
+        }
+    }
+
+    .contacts__email {
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 334px;
+
+        & td:first-child {
+            padding-right: 25px;
+        }
+
+        & td:last-child {
+            text-align: left;
+
+            cursor: pointer;
+        }
+    }
+
+    .contacts__address {
+        justify-content: flex-start;
+        width: 334px;
+
+        & td:last-child {
+            padding: 0;
+        }
+    }
+
+    .contacts__map {
+        margin-top: 60px;
+
+        background-image: url(../../img/map-tablet.jpg);
+    }
+
+    .contacts__button {
+        align-self: center;
+
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .contacts {
+        position: relative;
+
+        width: 1150px;
+    }
+
+    .contacts__wrapper {
+        padding-left: 225px;
+        padding-right: 50px;
+    }
+
+    .contacts__title {
+        font-size: 53px;
+        line-height: 57px;
+
+        margin-top: 150px;
+        margin-left: 0;
+
+        &::after {
+            top: -10px;
+            left: -105px;
+        }
+    }
+
+    .contacts__data {
+        margin: 0;
+
+        & tbody {
+            flex-direction: column;
+        }
+    }
+
+    .contacts__map {
+        position: absolute;
+        top: 58px;
+        right: 0;
+
+        width: 525px;
+        height: 457px;
+
+        background-image: url(../../img/map-desktop.jpg);
+    }
+
+    .contacts__button {
+        align-self: flex-start;
+
+        margin-left: 225px;
+        margin-top: 85px;
+        margin-bottom: 100px;
+    }
+}

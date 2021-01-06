@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 320px; 
+    margin: 0 auto;
+    margin-left: -150px;
+    margin-top: -180px;
+
+    display: none;
+
+    color: $color-text;
+
+    background-color: #ffffff;
+
+    border: 1px solid #c7c7c7;
+
+    box-shadow: 0px 9px 15px 1px rgba(0,0,0,0.75);
+}
+
+.modal__conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+.modal__title {
+    @include indents;
+
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.modal__text {
+    @include indents;
+
+    font-size: 15px;
+    line-height: 30px;
+    text-align: center;
+    color: $bg-border-btn;
+
+    margin-bottom: 30px;
+}
+
+.modal__size {
+    @include list-style;
+
+    margin-bottom: 30px;
+}
+
+.size {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.size__item {
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+    color: $bg-border-btn;
+
+    padding: 15px 32px;
+
+    border: 2px solid $bg-border;
+
+    &:hover {
+        border: 2px solid #c7c7c7;
+    }
+
+    &--active {
+        border: 2px solid #63d1bb;
+    }
+}
+
+.modal__button {
+    font: inherit;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+
+    width: 100%;
+    margin-bottom: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    background-color: #63d1bb;
+
+    border: none;
+}
+
+@media (min-width: $tablet-width) {
+    .modal {
+        width: 565px;
+
+        margin-left: -310px;
+    }
+
+    .modal__conteiner {
+        padding: 0 100px;
+    }
+
+    .modal__title {
+        font-size: 30px;
+        line-height: 57px;
+
+        margin-top: 45px;
+        margin-bottom: 30px;
+    }
+
+    .modal__text {
+        font-size: 17px;
+    }
+
+    .size__item {
+        padding: 18px 50px;
+    }
+
+    .modal__button {
+        margin-bottom: 50px;
+    }
+}

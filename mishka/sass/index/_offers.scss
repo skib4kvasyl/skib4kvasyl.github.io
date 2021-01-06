@@ -1,0 +1,64 @@
+.offers {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .offers {
+        width: 768px;
+        margin: 0 auto;
+        padding: 0 50px;
+
+        display: flex;
+
+        background-color: $bg-header;
+    }
+
+    .offers__list {
+        display: none;
+    }
+
+    .offers__text {
+        @include indents;
+
+        font-size: 15px;
+
+        margin-left: auto;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .offers {
+        width: 1150px;
+    }
+
+    .offers__list {
+        @include list-style;
+
+        display: flex;
+
+        padding-top: 20px;
+    }
+
+    .offers__item {
+        font-size: 15px;
+        font-weight: bold;
+
+        & a {
+            text-decoration: none;
+            color: $color-text;
+        }
+
+        &:first-child {
+            padding-right: 60px;
+        }
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+}

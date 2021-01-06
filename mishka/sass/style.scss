@@ -1,0 +1,25 @@
+@import "start-settings/mixin";
+@import "start-settings/scaffolding";
+
+@import "index/header";
+@import "index/offers";
+@import "index/main-header";
+@import "index/popular";
+@import "index/about-us";
+@import "index/reviews";
+@import "index/contacts";
+@import "index/footer";
+
+@import "modal/modal";
+@import "modal/overlay";
+
+@import "catalog/catalog";
+@import "catalog/production";
+
+@import "form/text";
+@import "form/form-type";
+@import "form/form-color";
+@import "form/form-name";
+@import "form/form-contacts";
+@import "form/form-comment";
+@import "form/form-submit";
