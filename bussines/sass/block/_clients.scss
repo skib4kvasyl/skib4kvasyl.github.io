@@ -1,0 +1,138 @@
+.clients {
+    background-color: #ffc155;
+}
+
+.clients__title {
+    @include def;
+    @include gotham;
+
+    margin-top: 8rem;
+}
+
+.clients__text {
+    @include def;
+    @include open-sans;
+
+    margin-bottom: 3.4rem;
+}
+
+.clients__list {
+    @include list-style;
+}
+
+.reviews {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 8.75rem;
+}
+
+.reviews__item {
+    display: flex;
+    margin-bottom: 1.25rem;
+    padding: 0;
+
+    background-color: #ffffff;
+}
+
+.reviews__image {
+    padding-top: 2rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+    & img {
+        width: 121px;
+        height: 121px;
+    }
+}
+
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews__text {
+    @include def;
+
+    margin-top: 2rem;
+    padding-right: 2.5rem;
+
+    font-size: 0.81rem;
+    line-height: 1.37rem;
+    font-weight: normal;
+    font-family: "Open Sans", sans-serif;
+    color: #7b7b7b;
+}
+
+.reviews__author {
+    @include def;
+
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    font-size: 0.87rem;
+    line-height: 1.37rem;
+    font-weight: normal;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    color: #99a9ae;
+
+    & span {
+        color: #f6772c;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-6 {
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 992px) {
+    .reviews {
+        margin-bottom: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews__image {
+        & img {
+            width: 90px;
+            height: 90px;
+        }
+    }
+
+    .reviews__text {
+        font-size: 0.6rem;
+    }
+
+    .reviews__author {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .clients__title {
+        margin-top: 5rem;
+    }
+    
+    .reviews__item {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1.25rem;
+    }
+}
+
+@media (max-width: 470px) {
+    .reviews__item {
+        & img {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    .reviews__text {
+        padding-right: 1rem;
+    }
+}

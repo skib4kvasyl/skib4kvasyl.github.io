@@ -1,0 +1,28 @@
+@mixin list-style {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@mixin def {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin gotham {
+    font-size: 1.87rem;
+    line-height: 1.87rem;
+    font-weight: 900;
+    font-family: 'Gotham', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+@mixin open-sans {
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
