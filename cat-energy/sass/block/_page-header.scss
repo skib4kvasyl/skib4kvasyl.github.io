@@ -1,0 +1,284 @@
+.page-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.page-header__wrapper {
+    position: relative;
+
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page-header__logo-image {
+    margin-top: 11px;
+    margin-bottom: 16px;
+    margin-right: 57px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.page-header__logo-text {
+    margin-top: 24px;
+    margin-bottom: 23px;
+
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &:active {
+        opacity: 0.6;
+    }
+}
+
+.page-header__logo img {
+    width: 33px;
+    height: 38px;
+}
+
+.page-header__title img {
+    width: 101px;
+    height: 18px;
+
+    cursor: pointer;
+}
+
+.page-header__toggle {
+    position: absolute;
+    top: center;
+    right: 20px;
+
+    width: 30px;
+    height: 30px;
+
+    font-size: 0;
+
+    border: none;
+    outline: none;
+
+    background-color: transparent;
+}
+
+.page-header__wrapper--close .page-header__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 5px;
+    right: 0;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $color-toggle;
+    box-shadow: 0 8px 0 0 $color-toggle,
+                0 16px 0 0 $color-toggle;
+}
+
+.page-header__wrapper--open .page-header__toggle::before,
+.page-header__wrapper--open .page-header__toggle::after {
+    content: "";
+
+    position: absolute;
+    top: 13px;
+    right: 0;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: $color-toggle;
+}
+
+.page-header__wrapper--open .page-header__toggle::before {
+    transform: rotate(45deg);
+}
+
+.page-header__wrapper--open .page-header__toggle::after {
+    transform: rotate(-45deg);
+}
+
+// Стилізація навігації
+
+.site-list {
+    @include list-style;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.site-list a {
+    display: block;
+    padding: 0;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: #111111;
+
+    border-top: 1px solid $border-color;
+}
+
+.site-list__item:nth-child(3) {
+    border-bottom: 1px solid $border-color;
+}
+
+@media (max-width: $mobile-width-only) {
+    .page-header__wrapper--close + .main-nav {
+        display: none;
+    }
+
+    .page-header__wrapper--open + .main-nav {
+        display: block;
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .page-header {
+        width: 708px;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .page-header__wrapper {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-header__title,
+    .page-header__toggle {
+        display: none;
+    }
+
+    .page-header__logo {
+        margin-top: 24px;
+    }
+
+    .page-header__logo-image {
+        margin: 0;
+    }
+
+    .page-header__logo img {
+        width: 173px;
+        height: 58px;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+
+    .main-nav {
+        width: 500px;
+        margin-top: 55px;
+    }
+
+    .site-list {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .site-list a {
+        padding: 0;
+
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        text-align: right;
+
+        border-top: none;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
+    .site-list__item {
+        margin-left: 35px;
+
+        &:nth-child(1) {
+            margin-left: 0;
+        }
+    }
+
+    .site-list__item:nth-child(3) {
+        border-bottom: none;
+    }
+
+    .site-list__item--active {
+        position: relative;
+        
+        &::after {
+            content: "";
+            
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            right: 0;
+
+            height: 2px;
+
+            background-color: #68b738;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .page-header {
+        position: relative;
+        z-index: 4;
+
+        width: 1300px;
+        padding: 0 40px;
+
+        background-color: transparent;
+    }
+
+    .page-header__logo {
+        margin-top: 54px;
+    }
+
+    .page-header__logo img {
+        width: 202px;
+        height: 59px;
+    }
+
+    .main-nav {
+        margin-top: 65px;
+    }
+
+    .site-list a {
+        font-size: 20px;
+
+        color: #ffffff;
+    }
+
+    .site-list__item--active::after {
+        background-color: #ffffff;
+    }
+}

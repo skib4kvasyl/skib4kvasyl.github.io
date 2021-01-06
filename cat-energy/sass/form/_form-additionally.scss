@@ -1,0 +1,142 @@
+.form__additionally {
+    @include indents;
+
+    width: 320px;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    border: none;
+    border-top: 3px solid $button-color;
+}
+
+.form__add {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 40px;
+
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.form__filter {
+    @include list-style;
+
+    padding-left: 20px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter__option {
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.filter__checkbox {
+    position: relative;
+
+    padding-left: 45px;
+
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+
+.filter__checkbox input[type="checkbox"] + .filter__indicator {
+    position: absolute;
+
+    top: -5px;
+    left: 0;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid #cdcdcd;
+}
+
+.filter__checkbox input[type="checkbox"]:checked + .filter__indicator::before {
+    content: "";
+
+    position: absolute;
+    top: 6px;
+    left: 4px;
+
+    width: 21px;
+    height: 16px;
+
+    background-image: url(../../img/icon.png);
+    background-repeat: no-repeat;
+}
+ 
+@media (min-width: $tablet-width) {
+    .form__additionally {
+        width: 768px;
+        margin-top: 70px;
+        padding: 0 30px;
+    }
+
+    .form__add {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 50px;
+
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .form__filter {
+        padding-left: 40px;
+    }
+
+    .filter {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .filter__option {
+        width: 285px;
+        margin-bottom: 50px;
+    }
+
+    .filter__checkbox {
+        padding-left: 60px;
+
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .filter__checkbox input[type="checkbox"] + .filter__indicator {
+        top: -7px;
+
+        width: 40px;
+        height: 40px;
+    }
+
+    .filter__checkbox input[type="checkbox"]:checked + .filter__indicator::before {
+        top: 12px;
+        left: 10px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .form__additionally {
+        width: 1300px;
+        padding: 0;
+    }
+
+    .form__add {
+        margin-bottom: 55px;
+    }
+
+    .filter__option {
+        width: 245px;
+    }
+}

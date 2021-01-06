@@ -1,0 +1,35 @@
+$button-color: #68b738;
+$bg-color: #f2f2f2;
+$color-toggle: #222222;
+$border-color: #e6e6e6;
+$text-color: #ffffff;
+$button-hover: #5eaa2f;
+$button-active: #8fc46e;
+$text: #111111;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+@mixin list-style {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+@mixin font-arial {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Arial", sans-serif;
+    color: #444444;
+}
+
+@mixin indents {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}

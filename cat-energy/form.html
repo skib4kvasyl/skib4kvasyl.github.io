@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>cat energy</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    </head>
+    <body>
+        
+        <header class="page-header">
+            <div class="page-header__wrapper page-header__wrapper--close">
+                <a class="page-header__logo" href="index.html">
+                    <picture>
+                        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+                        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                        <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Лого мобильной версии">
+                    </picture>
+                </a>
+                <a class="page-header__title" href="#">
+                    <img class="page-header__logo-text" src="img/text-mobile.svg" width="101" height="18" alt="Текст на мобильной версии">
+                </a>
+                <button class="page-header__toggle" type="button">Бургер</button>
+            </div>
+            <nav class="main-nav main-nav__catalog">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="catalog.html">Каталог продукции</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a>Подбор программы</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="page-main">
+
+            <h1 class="visually-hidden">Каталог товаров</h1>
+
+            <section class="choice-program">
+                
+                <div class="choice-program__caption">
+                    <h2 class="choice-program__title">Подбор программы</h2>
+                    <p class="choice-program__text">
+                        Заполните анкету и мы подберем программу питания для вашего кота
+                    </p>
+                </div>
+
+                <form class="choice-program__form form" action="#" method="POST">
+                    <div class="form__conteiner">
+                        <ul class="form__list login">
+                            <li class="login__item">
+                                <label>
+                                    Имя:<sup>*</sup>
+                                    <input class="login__field login__field--user" type="text" name="login" placeholder="Имя">
+                                </label>
+                            </li>
+                            <li class="login__item">
+                                <label>
+                                    Вес (кг):<sup>*</sup>
+                                    <input class="login__field login__field--weight" type="text" name="weight" placeholder="Вес">
+                                </label>
+                            </li>
+                            <li class="login__item">
+                                <label>
+                                    Возраст (лет):
+                                    <input class="login__field login__field--age" type="text" name="age" placeholder="Возраст">
+                                </label>
+                            </li>
+                        </ul>
+
+                        <fieldset class="form__program">
+                            <legend>Выбор программы</legend>
+                            <ul class="fotm__radio">
+                                <li class="form__option">
+                                    <label class="form__radio-label">
+                                        <input class="visually-hidden" type="radio" name="program">
+                                        <span class="form__indicator"></span>
+                                        Похудение
+                                    </label>
+                                </li>
+                                <li class="form__option">
+                                    <label class="form__radio-label">
+                                        <input class="visually-hidden" type="radio" name="program" checked>
+                                        <span class="form__indicator"></span>
+                                        Набор массы
+                                    </label>
+                                </li>
+                                <li class="form__option">
+                                    <label class="form__radio-label">
+                                        <input  class="visually-hidden" type="radio" name="program">
+                                        <span class="form__indicator"></span>
+                                        Не знаю (Нужен ваш совет)
+                                    </label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+
+                    <fieldset class="form__contacts">
+                        <legend class="form__legent">Контактные данные (владельца кота)</legend>
+                        <ul class="form__cat-owner cat-owner">
+                            <li class="cat-owner__item">
+                                <label class="cat-owner__label">
+                                    E-mail:<sup>*</sup>
+                                    <input class="cat-owner__input" type="email" name="email" placeholder="E-mail">
+                                    <span class="icon-email"></span>
+                                </label>
+                            </li>
+                            <li class="cat-owner__item">
+                                <label class="cat-owner__label">
+                                    Телефон:<sup>*</sup>
+                                    <input class="cat-owner__input" type="number" name="number" placeholder="Телефон">
+                                    <span class="icon-number"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <fieldset class="form__comments">
+                        <legend class="form__cmt">Комментарий</legend>
+                        <p class="form__textarea">
+                            <textarea name="text" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+                        </p>    
+                    </fieldset>
+
+                    <fieldset class="form__additionally">
+                        <legend class="form__add">Дополнительно</legend>
+                        <ul class="form__filter filter">
+                            <li class="filter__option">
+                                <label class="filter__checkbox">
+                                    <input class="visually-hidden" type="checkbox" name="sugar-substitute">
+                                    <span class="filter__indicator"></span>
+                                    Сахарозаменитель
+                                </label>
+                            </li>
+                            <li class="filter__option">
+                                <label class="filter__checkbox">
+                                    <input class="visually-hidden" type="checkbox" name="milk" checked>
+                                    <span class="filter__indicator"></span>
+                                    Молоко
+                                </label>
+                            </li>
+                            <li class="filter__option">
+                                <label class="filter__checkbox">
+                                    <input class="visually-hidden" type="checkbox" name="drinking-water">
+                                    <span class="filter__indicator"></span>
+                                    Питьевая вода
+                                </label>
+                            </li>
+                            <li class="filter__option">
+                                <label class="filter__checkbox">
+                                    <input class="visually-hidden" type="checkbox" name=vitamins">
+                                    <span class="filter__indicator"></span>
+                                    Витамины
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+
+                    <p class="form__submit">
+                        <button class="form__button button" type="submit">Отправить заявку</button>
+                        <span class="form__legend-buttom"><sup>*</sup>— Обязательные поля</span>
+                    </p>
+                </form>
+            </section>
+
+            <section class="contacts">
+
+                <h2 class="visually-hidden">Контактная информация</h2>
+
+                <div class="contacts__cooperation">
+                    <div class="contacts__wrapper">
+                        <p class="contacts__dealers">приглашаем  к сотрудничеству  дилеров!</p>
+                        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 <b>Санкт-Петербург</b></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="page-footer">
+            <div class="page-footer__wrapper">
+                <section class="page-footer__logo logo-footer">
+                    <img class="logo-footer__image" src="img/footer-logo.svg" width="128" height="24" alt="лого футера">
+                </section>
+
+                <section class="page-footer__social social">
+                    <ul class="social__list">
+                        <li class="social__item">
+                            <a class="social__link social__link--vk" href="#">
+                                Вконтакте
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="16" viewBox="0 0 30 16">
+                                    <image id="vk.svg" width="30" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAQCAYAAAABOs/SAAACj0lEQVQ4jaXVa8jPZxgH8M/zODWZHNKiTWQ55YV6lFPKnlYkYsshSm3K4wXyhiJyGNHMNmIhyQutZQ5DXig0kZbzkqwsnsKTkbLkVE7rquuvn1/P35Rv3f/797/u+76+933d3+u6axoaGj5CPdp4ExdwKS1tsRbj0Q21aX+Ba1iPzaX1PVGHdiX7UxxriYvoqnlMxF4swOyc8Stu53d7DMdP2Ic7ae+PP9Gqit/GII52ExPwMgdaYw9W4QC2YxDG4hy+Kzj5CjvwaYF4aUZlHB6mLXw/SL8dY/AHfII+uctoZ7AGfTETt9LJ3Txhc3iUttjgZOzEIRzPdiI5emFLEG9AE1bjg4LDbbiCleiStghxhyrEgRbYiCdYUhrrja34O7hqc9JC9MD8wsTnmIPOuaCC2pLDttk/Tj9DsCIPU0FHHMw7/zKiU3Hyc4Z3Uaqxgt/xI77IE8SV/FsifpX9NHwTisW6wnjrFF6EeQYuK+w+Fs/KSXG6msLCOMXRDHkn/FEiPp/9MlzF1IJIA99jJBZj1+s7qaurq3z/k7kcKr2P02l/kSn0NBX9LZ4VHDdl+yuFeK8w9jF+wW+YW9xtFJDi/1ZJGHk4Ame9H6I43chIjC7ee1koz7JohFD2547fB3fyXvvmgQZUIw5cx5RMoePvSD43U21fnrKIEO4YfIiTGFqNOHAkyXtkuOvfQto1lf8oa/mpZjYb/j7LFD0cV1mNWApiVCo9UmQ3hpUUL/M2Cse8zNHuGal+pXnx6HyeJXp7/LwNQRgOQsnT8/5DteGk8lBERQqEgKIqxZxQcsyJB6ai8nilgi/qwKD/Iw5Eff4ayzP8kZMDM3SRBRHiTUkaiAo1OJ/RSRmxIhox+z+sBJSfgupJ8wAAAABJRU5ErkJggg=="/>
+                                </svg>                                  
+                            </a> 
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--instagram" href="#">
+                                Инстаграм
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23" viewBox="0 0 23 23">
+                                    <image id="insta.svg" width="23" height="23" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAB20lEQVRIia2VzSsFYRSHH9OglFJCKGRzF3bY+YiNhSwtXHKRujsfW9mzxV75trSzsEDxL9x0Nz6KhSSyULKgk9/UG3Nn7uC3eWvOmeecOe+Zc0qy2SxSBTALjAEpoJTi9Q7kgV1gDXi1N3293gocCpoD1oH7BPBaoBdYBiaBQeDSV8YGbgJGgf0E0O9KKzHjtfsqReofwDjv7xnXU41zfwBbUi/KOAhgvDFPWZ/FABqAEWBeZ71jGwYqFSSQ8VK+uqLQ5VUBK0AGKHGefwBbwBywBJQBB479zbh+CNAFnwNtwDawAVwDLeqICaAT6AaGwgBR8FWBx4Ed5/klcAwcKeiKgv2QVwDcKOjGN7CrHdkzupOi4X2q8VbElyG7+fUngdfovIqBB/aaMGMh+KPOlhh4YH9IAj9Ru2Vi4Bn5nSaB32rCTemnCdOI7Haxd2EOUa1oM6dDv/MAsAncAM3qcQNfyC9UUfAnoEvzeVKwQB/KeAZ4joLboK+LCGD9vqB2q9Zln6h0hVRuXF8bpCfCEYG2Y3xcGS/v6eLaNOj/Q2nxdj3VNK95/NcAwSYy3pqVxZap7TxbTbZBFjWPbWwWK6uxlcIyNrDxXoNusUnX7mz/6V9uf7v4r+0PfAJEKmj3z7eUygAAAABJRU5ErkJggg=="/>
+                                  </svg>                                  
+                            </a> 
+                        </li>
+                        <li class="social__item">
+                            <a class="social__link social__link--fackebook" href="#">
+                                Фейсбук
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="28" viewBox="0 0 14 28">
+                                    <image id="fb.svg" width="14" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAcCAYAAABRVo5BAAABIElEQVQ4je2UvUoDURBGT0IKJYgYsBVCLLQQUtmkCIEIggRDwMZW2Mpn0DxC3sBOJVhZBCwEW1OlszV5An8wiGlkZILjMCyYNvlguHvvzrnzDcxuJkkSAhWAU+AQ2AaWfUougGrAjcJPQBd4Me+rQNmDm8At8AnsA3fBxZ0IPAPyQB14jHqIrC4BLeA+gCrAuj6XPLil1bw96ekhreKGriOXc6TrATCOwKyu7w4sAq9Az1dsG6uiFQfmdW3bQwHPXWLB7SfAqs+b2rtQSxLXDmwCayaubI9vwDOxPtzpl634b00rVnWURJdA31x0AuyY/a61WtYQDRzY0K/kj8RqRqOWYndo8n5i5h4X4JyD0Q/52MytyA54KrinYSWz+ivgG380J80U+2AHAAAAAElFTkSuQmCC"/>
+                                  </svg>
+                            </a> 
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="page-footer__copyright copyright">
+                    <b class="copyright__title">HTML Academy</b>
+                    <a class="copyright__link" href="#">HTML Academy</a>
+                </section>
+            </div>
+        </footer>
+
+        <script src="script/script.js"></script>
+
+    </body>
+</html>

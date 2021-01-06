@@ -1,0 +1,75 @@
+.form__comments {
+    @include indents;
+
+    width: 320px;
+    margin: 0 auto;
+
+    border: none;
+    border-top: 3px solid $button-color;
+}
+
+.form__cmt {
+    font-size: 24px;
+    line-height: 24px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 30px;
+}
+
+.form__textarea {
+    @include indents;
+    
+    padding-left: 20px;
+
+    & textarea {
+        width: 100%;
+
+        font-size: 16px;
+        line-height: 18px;
+        text-transform: uppercase;
+
+        padding: 15px 14px;
+
+        border: 1px solid $border-color;
+        outline: none;
+
+        &:focus {
+            border: 2px solid #444444;
+        }
+    }
+}
+
+@media (min-width: $tablet-width) {
+    .form__comments {
+        width: 768px;
+        padding: 0 30px;
+    }
+
+    .form__cmt {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 70px;
+
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .form__textarea {
+        padding-left: 40px; 
+
+        & textarea {
+            font-size: 20px;
+            line-height: 20px;
+
+            padding: 17px 20px;
+        }
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .form__comments {
+        width: 1300px;
+        padding: 0;
+    }
+}

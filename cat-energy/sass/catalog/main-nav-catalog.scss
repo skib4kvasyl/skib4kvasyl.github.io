@@ -1,0 +1,19 @@
+@media (min-width: $tablet-width) {
+    .main-nav__catalog {
+        margin-top: 45px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .main-nav__catalog {
+        margin-top: 75px;
+    }
+
+    .main-nav__catalog .site-list a {
+        color: $text;
+    }
+
+    .main-nav__catalog .site-list__item--active::after {
+        background-color: #68b738;
+    }
+}
