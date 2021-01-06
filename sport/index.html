@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sport</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+</head>
+    <body>
+        <header class="page-header">
+            <div class="container">
+                <div class="page-header__wrapper">
+                    <a class="page-header__logo" href="#">
+                        <img class="page-header__image" src="img/logo.svg" width="30" height="26" alt="site logo">
+                        <span class="page-header__text">Shape<span class="page-header__text--red">Up</span></span>
+                    </a>
+                    <nav class="main-nav">
+                        <ul class="main-nav__list">
+                            <li class="main-nav__item"><a href="#">Home</a></li>
+                            <li class="main-nav__item"><a href="#">About</a></li>
+                            <li class="main-nav__item"><a href="#">Trainers</a></li>
+                            <li class="main-nav__item"><a href="#">Services</a></li>
+                            <li class="main-nav__item"><a href="#">Reviews</a></li>
+                            <li class="main-nav__item"><a href="#">Price</a></li>
+                            <li class="main-nav__item"><a href="#">Blog</a></li>
+                            <li class="main-nav__item"><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <a class="page-header__menu" href="#">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="page-header__banner banner">
+                    <ul class="banner__list">
+                        <li class="banner__item">
+                            <p class="banner__text">
+                                <span class="banner__text--style"><b>Build</b> Your Body</span>
+                                <span class="banner__text--style"><b>Transform</b> Your Life</span>
+                            </p> 
+                        </li>
+                        <li class="banner__item">
+                            <p class="banner__description">
+                                Curabitur ac volutpat odio. Nunc eget eros viverra, laoreet ligula eget, interdum augue.
+                                Pellentesque ornare mauris a hendrerit imperdiet.
+                            </p>
+                        </li>
+                        <li class="banner__item banner__item--buttom">
+                            <button class="banner__btn banner__btn--started" type="button">Get Started</button>
+                            <button class="banner__btn banner__btn--learn" type="button">Learn More</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-main">
+            <section class="about-us">
+                <div class="container">
+                    <div class="about-us__wrapper">
+                        <div class="about-us__text">
+                            <ul class="about-us__list">
+                                <li class="about-us__item about-us__item--title">
+                                    <span>About ShapeUp</span>
+                                    <span>Welcome to Healthy Life</span>
+                                </li>
+                                <li class="about-us__item about-us__item--text">
+                                    <p>Nunc euismod ante at purus elementum porttitor.
+                                    Ut nisi nisl, auctor et imperdiet quis risus.</p>
+                                </li>
+                                <li class="about-us__item about-us__item--description">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas est porttitor,
+                                    malesuada tellus aliquet, vehicula ipsum. Suspendisse porttitor sed dolor ac vehicula.
+                                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+                                    turpis egestas. Morbi iaculis tellus vestibulum est accumsan commodo. Curabitur
+                                    sollicitudin, eros vitae vulputate euismod, nibh tortor accumsan tellus,
+                                    fringilla hendrerit ligula eros nec velit.</p>
+                                </li>
+                                <li class="about-us__item about-us__item--link">
+                                    <a href="#">Learn More</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="about-us__video">
+                            <ul class="about-us__video-list video-list">
+                                <li class="video-list__item video-list__item--main">
+                                    <picture>
+                                        <source srcset="img/main-video-mobile.jpg" media="(max-width: 576px)">
+                                        <source srcset="img/main-video-media.jpg" media="(max-width: 768px)">
+                                        <img src="img/main-video.jpg" width="564" height="400" alt="main video">
+                                    </picture>
+                                </li>
+                                <li class="video-list__item">
+                                    <picture>
+                                        <source srcset="img/video-3-mobile.jpg" media="(max-width: 576px)">
+                                        <source srcset="img/video-3-tablet.jpg" media="(max-width: 768px)">
+                                        <img src="img/video-3.jpg" width="170" height="100" alt="video-3">
+                                    </picture>
+                                </li>
+                                <li class="video-list__item">
+                                    <picture>
+                                        <source srcset="img/video-2-mobile.jpg" media="(max-width: 768px)">
+                                        <source srcset="img/video-2-tablet.jpg" media="(max-width: 768px)">
+                                        <img src="img/video-2.jpg" width="170" height="100" alt="video-2">
+                                    </picture>
+                                </li>
+                                <li class="video-list__item">
+                                    <picture>
+                                        <source srcset="img/main-video-mini-mobile.jpg" media="(max-width: 768px)">
+                                        <source srcset="img/main-video-mini-tablet.jpg" media="(max-width: 768px)">
+                                        <img src="img/main-video-mini.jpg" width="170" height="100" alt="active video">
+                                    </picture>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trainers">
+                <div class="container">
+                    <div class="row">
+                        <div class="trainers__title">
+                            <span>Meet</span>
+                            <span>our trainers</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="trainers__wrapper">
+                            <ul class="trainers__list">
+                                <li class="trainers__item trainers__item-1">
+                                    <p class="trainres__description">
+                                        <span>Rich Froning</span>
+                                        <span>Crossfit Trainer</span>
+                                    </p>
+                                </li>
+                                <li class="trainers__item trainers__item-2">
+                                    <p class="trainres__description">
+                                        <span>Letty Adams</span>
+                                        <span>Fitness Trainer</span>
+                                    </p>
+                                </li>
+                                <li class="trainers__item trainers__item-3">
+                                    <p class="trainres__description">
+                                        <span>John Diggle</span>
+                                        <span>Fitness Trainer</span>
+                                    </p>
+                                </li>
+                                <li class="trainers__item trainers__item-4">
+                                    <p class="trainres__description">
+                                        <span>Emily Bett Richards</span>
+                                        <span>Aerobics</span>
+                                    </p>
+                                </li>
+                                <li class="trainers__item trainers__item-5">
+                                    <p class="trainres__description">
+                                        <span>Stephen Amell</span>
+                                        <span>Crossfit Trainer</span>
+                                    </p>
+                                </li>
+                            </ul>
+                            <a class="trainers__controll trainers__controll--left">prev</a>
+                            <a class="trainers__controll trainers__controll--right trainers__controll--show">next</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="programs">
+                <div class="container">
+                    <div class="row">
+                        <div class="programs__title">
+                            <span>Choose</span>
+                            <span>Our Programs</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="programs__list">
+                            <li class="programs__item programs__item--body">
+                                <p class="programs__name-program">Body Building Programs</p>
+                                <p class="program__text">
+                                    Sed augue enim, lacinia non dui ut, mollis vulputate
+                                    felis. Vivamus consequat bibendum ullamcorper. Donec
+                                    sed nibh aliquet odio efficitur sagittis.
+                                </p>
+                                <a class="programs__button" href="#">Learn More</a>
+                            </li>
+                            <li class="programs__item programs__item--weight-loose">
+                                <p class="programs__name-program">Weight Loose Programs</p>
+                                <p class="program__text">
+                                    Sed augue enim, lacinia non dui ut, mollis vulputate
+                                    felis. Vivamus consequat bibendum ullamcorper. Donec
+                                    sed nibh aliquet odio efficitur sagittis.
+                                </p>
+                                <a class="programs__button" href="#">Learn More</a>
+                            </li>
+                            <li class="programs__item programs__item--spa">
+                                <p class="programs__name-program">Spa Programs</p>
+                                <p class="program__text">
+                                    Sed augue enim, lacinia non dui ut, mollis vulputate
+                                    felis. Vivamus consequat bibendum ullamcorper. Donec
+                                    sed nibh aliquet odio efficitur sagittis.
+                                </p>
+                                <a class="programs__button" href="#">Learn More</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container">
+                    <div class="row">
+                        <div class="reviews__title">
+                            <span>Reviews</span>
+                            <span>What Our Clients Say</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="reviews__wrapper">
+                            <div class="reviews__content content content__active">
+                                <ul class="content__list">
+                                    <li class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/reviews-img-1.png" width="230" height="300" alt="content image 1">
+                                        </div>
+                                        <div class="content__open-image">
+                                            <img src="img/reviews-hover.jpg" width="190" height="243" alt="open photo to click text">
+                                        </div>
+                                        <div class="content__information information">
+                                            <p class="information__title">
+                                                <span>Rebecca Morrison</span>
+                                                <span>Social Worker</span>
+                                                <a class="information__open-images" >Photo by the author</a>
+                                                <span class="tooltip">click no text - open photo</span>
+                                            </p>
+                                            <p class="information__text">
+                                                Curabitur interdum nulla ligula, ac iaculis est venon.
+                                                Quisque auctor, ex id posuere aliquam, lorem mauris
+                                                venenatis sem, eu facilisis magna nibh . Praesent
+                                                laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                                Aliquam erat volutpat.
+                                            </p>
+                                            <p class="information__star">
+                                                <i>1</i>
+                                                <i>2</i>
+                                                <i>3</i>
+                                                <i>4</i>
+                                                <i>5</i>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/reviews-img-2.png" width="230" height="300" alt="content image 1">
+                                        </div>
+                                        <div class="content__open-image">
+                                            <img src="img/reviews-hover-2.jpg" width="190" height="243" alt="open photo to click text">
+                                        </div>
+                                        <div class="content__information information">
+                                            <p class="information__title">
+                                                <span>Daniel Bllomberg</span>
+                                                <span>Salesman</span>
+                                                <a class="information__open-images">Photo by the author</a>
+                                                <span class="tooltip">click no text - open photo</span>
+                                            </p>
+                                            <p class="information__text">
+                                                Donec nec interdum turpis. Donec faucibus facilisis
+                                                enim, ut fringilla urna elementum non. Mauris vel
+                                                mauris ac tellus feugiat maximus. Sed augue enim,
+                                                lacinia non dui ut, mollis vulputate felis. Vivamus
+                                                consequat bibendum ullamcorper.
+                                            </p>
+                                            <p class="information__star information__star--none">
+                                                <i>1</i>
+                                                <i>2</i>
+                                                <i>3</i>
+                                                <i>4</i>
+                                                <i>5</i>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reviews__content content">
+                                <ul class="content__list">
+                                    <li class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/reviews-img-3.png" width="230" height="300" alt="content image 1">
+                                        </div>
+                                        <div class="content__information information">
+                                            <p class="information__title">
+                                                <span>name next clients-1</span>
+                                                <span>Social Worker</span>
+                                            </p>
+                                            <p class="information__text">
+                                                Curabitur interdum nulla ligula, ac iaculis est venon.
+                                                Quisque auctor, ex id posuere aliquam, lorem mauris
+                                                venenatis sem, eu facilisis magna nibh . Praesent
+                                                laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                                Aliquam erat volutpat.
+                                            </p>
+                                            <p class="information__star">
+                                                <i>1</i>
+                                                <i>2</i>
+                                                <i>3</i>
+                                                <i>4</i>
+                                                <i>5</i>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/reviews-img-4.png" width="230" height="300" alt="content image 1">
+                                        </div>
+                                        <div class="content__information information">
+                                            <p class="information__title">
+                                                <span>name next clients-2</span>
+                                                <span>Salesman</span>
+                                            </p>
+                                            <p class="information__text">
+                                                Donec nec interdum turpis. Donec faucibus facilisis
+                                                enim, ut fringilla urna elementum non. Mauris vel
+                                                mauris ac tellus feugiat maximus. Sed augue enim,
+                                                lacinia non dui ut, mollis vulputate felis. Vivamus
+                                                consequat bibendum ullamcorper.
+                                            </p>
+                                            <p class="information__star information__star--none">
+                                                <i>1</i>
+                                                <i>2</i>
+                                                <i>3</i>
+                                                <i>4</i>
+                                                <i>5</i>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="reviews__content content">
+                                <ul class="content__list">
+                                    <li class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/reviews-img-3.png" width="230" height="300" alt="content image 1">
+                                        </div>
+                                        <div class="content__information information">
+                                            <p class="information__title">
+                                                <span>name next clients-3</span>
+                                                <span>Social Worker</span>
+                                            </p>
+                                            <p class="information__text">
+                                                Curabitur interdum nulla ligula, ac iaculis est venon.
+                                                Quisque auctor, ex id posuere aliquam, lorem mauris
+                                                venenatis sem, eu facilisis magna nibh . Praesent
+                                                laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                                Aliquam erat volutpat.
+                                            </p>
+                                            <p class="information__star">
+                                                <i>1</i>
+                                                <i>2</i>
+                                                <i>3</i>
+                                                <i>4</i>
+                                                <i>5</i>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/reviews-img-4.png" width="230" height="300" alt="content image 1">
+                                        </div>
+                                        <div class="content__information information">
+                                            <p class="information__title">
+                                                <span>name next clients-4</span>
+                                                <span>Salesman</span>
+                                            </p>
+                                            <p class="information__text">
+                                                Donec nec interdum turpis. Donec faucibus facilisis
+                                                enim, ut fringilla urna elementum non. Mauris vel
+                                                mauris ac tellus feugiat maximus. Sed augue enim,
+                                                lacinia non dui ut, mollis vulputate felis. Vivamus
+                                                consequat bibendum ullamcorper.
+                                            </p>
+                                            <p class="information__star information__star--none">
+                                                <i>1</i>
+                                                <i>2</i>
+                                                <i>3</i>
+                                                <i>4</i>
+                                                <i>5</i>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="reviews__switch">
+                                <li class="reviews__item reviews__item--active">1</li>
+                                <li class="reviews__item">2</li>
+                                <li class="reviews__item">3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="gallery__slider">
+                            <ul class="gallery__list">
+                                <li class="gallery__item">
+                                    <img src="img/gallery-1.jpg" height="370" alt="image gallery 1">
+                                </li>
+                                <li class="gallery__item">
+                                    <img src="img/gallery-2.jpg" height="370" alt="image gallery 1">
+                                </li>
+                                <li class="gallery__item">
+                                    <img src="img/gallery-3.jpg" height="370" alt="image gallery 1">
+                                </li>
+                                <li class="gallery__item">
+                                    <img src="img/gallery-4.jpg" height="370" alt="image gallery 1">
+                                </li>
+                                <li class="gallery__item">
+                                    <img src="img/gallery-5.jpg" height="370" alt="image gallery 1">
+                                </li>
+                                <li class="gallery__item">
+                                    <img src="img/trainre-2-hover.jpg" height="370" alt="image gallery 1">
+                                </li>
+                                <li class="gallery__item">
+                                    <img src="img/trainre-3-hover.jpg" height="370" alt="image gallery 1">
+                                </li>
+                            </ul>
+                            <a class="gallery__controll gallery__controll--left"></a>
+                            <a class="gallery__controll gallery__controll--right gallery__controll--show"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="price">
+                <div class="container">
+                    <div class="row">
+                        <div class="price__title">
+                            <span>Pricing Table</span>
+                            <span>Our Membership Plans</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="price__list">
+                            <li class="price__item">
+                                <p class="price__day">$<span>10</span>/Day</p>
+                                <p class="price__type">One Day Training</p>
+                                <ul class="price__sub-list">
+                                    <li>One day access to all clubs</li>
+                                    <li>Training in group</li>
+                                    <li>No Dedicated trainer</li>
+                                    <li>Access to one 1 hour fitness class</li>
+                                    <li>No access to spa center</li>
+                                    <li>(Book Separately)</li>
+                                </ul>
+                                <button class="price__btn" type="button">Book Now</button>
+                            </li>
+                            <li class="price__item">
+                                <p class="price__day">$<span>49</span>/month</p>
+                                <p class="price__type">One Year Subscription</p>
+                                <ul class="price__sub-list">
+                                    <li>Access to all clubs</li>
+                                    <li>Training in group or alone</li>
+                                    <li>Dedicated trainer available</li>
+                                    <li>Access to one 1 hour fitness class</li>
+                                    <li>Access to spa center</li>
+                                    <li>(Book Separately)</li>
+                                </ul>
+                                <button class="price__btn" type="button">Book Now</button>
+                            </li>
+                            <li class="price__item">
+                                <p class="price__day">$<span>65</span>/month</p>
+                                <p class="price__type">One Month Sybscription</p>
+                                <ul class="price__sub-list">
+                                    <li>Access to all clubs</li>
+                                    <li>Training in group or alone</li>
+                                    <li>Dedicated trainer available</li>
+                                    <li>Access to one 1 hour fitness class</li>
+                                    <li>Access to spa center</li>
+                                    <li>(Book Separately)</li>
+                                </ul>
+                                <button class="price__btn" type="button">Book Now</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog">  
+                <div class="container">
+                    <div class="row">
+                        <div class="blog__title">
+                            <span>Blog</span>
+                            <span>Our Latest News</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="blog__wrapper">
+                            <ul class="blog__list">
+                                <li class="blog__item">
+                                    <div class="blog__image">
+                                        <img src="img/blog-1.jpg" width="262" height="200" alt="blog image 1">
+                                    </div>
+                                    <ul class="blog__sup-list sup-list">
+                                        <li class="sup-list__item">Body Fitness</li>
+                                        <li class="sup-list__item">Start your push-ups today and see results</li>
+                                        <li class="sup-list__item">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare 
+                                            ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+                                        </li>
+                                    </ul>
+                                    <div class="blog__text">Continue reading</div>
+                                    <div class="blog__like">
+                                        <p class="blog__likes">1d | Kevin Smith</p>
+                                        <p class="blog__likes blog__likes--heart">25</p>
+                                    </div>
+                                </li>
+                                <li class="blog__item">
+                                    <div class="blog__image">
+                                        <img src="img/blog-2.jpg" width="262" height="200" alt="blog image 2">
+                                    </div>
+                                    <ul class="blog__sup-list sup-list">
+                                        <li class="sup-list__item">Exersize</li>
+                                        <li class="sup-list__item">Are you commited enough for better body?</li>
+                                        <li class="sup-list__item">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare
+                                            ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+                                        </li>
+                                    </ul>
+                                    <div class="blog__text">Continue reading</div>
+                                    <div class="blog__like">
+                                        <p class="blog__likes">2d | Md Mizanur Rahman</p>
+                                        <p class="blog__likes blog__likes--heart">50</p>
+                                    </div>
+                                </li>
+                                <li class="blog__item">
+                                    <div class="blog__image">
+                                        <img src="img/blog-3.jpg" width="262" height="200" alt="blog image 3">
+                                    </div>
+                                    <ul class="blog__sup-list sup-list">
+                                        <li class="sup-list__item">Fitness Club</li>
+                                        <li class="sup-list__item">Why working out is good for you?</li>
+                                        <li class="sup-list__item">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare
+                                            ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+                                        </li>
+                                    </ul>
+                                    <div class="blog__text">Continue reading</div>
+                                    <div class="blog__like">
+                                        <p class="blog__likes">2d | Nazratun Nayeem</p>
+                                        <p class="blog__likes blog__likes--heart">71</p>
+                                    </div>
+                                </li>
+                                <li class="blog__item">
+                                    <div class="blog__image">
+                                        <img src="img/blog-4.jpg" width="262" height="200" alt="blog image 4">
+                                    </div>
+                                    <ul class="blog__sup-list sup-list">
+                                        <li class="sup-list__item">Training Equipments</li>
+                                        <li class="sup-list__item">Liftings things do make a difference</li>
+                                        <li class="sup-list__item">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ornare
+                                            ut dui sed facilisis. Aliquam eu nunc orci. Aliquam eleifend in lorem nec mollis.
+                                        </li>
+                                    </ul>
+                                    <div class="blog__text">Continue reading</div>
+                                    <div class="blog__like">
+                                        <p class="blog__likes">3d | Marry Poppins</p>
+                                        <p class="blog__likes blog__likes--heart">39</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <a class="blog__controll blog__controll--left">prev</a>
+                            <a class="blog__controll blog__controll--right blog__controll--show">next</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="call-us">
+                <div class="container">
+                    <div class="row">
+                        <ul class="call-us__list">
+                            <li class="call-us__item call-us__item--title">Call Us Today</li>
+                            <li class="call-us__item call-us__item--number">+1 957 652 1268</li>
+                            <li class="call-us__item call-us__item--description">
+                                Praesent elementum nulla non posuere dictum. Suspendisse aliquet quam
+                                diam, egestas tristique nibh tempor sed. Ut justo leo, eleifend sit amet ipsum ac,
+                                scelerisque mattis nisl.
+                            </li>
+                            <li class="call-us__item call-us__item--button">
+                                <button class="call-us__btn" type="button">Book a Program</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="social">
+                <div class="container">
+                    <div class="row">
+                        <ul class="social__list">
+                            <li class="social__item follow-us">
+                                <div class="follow-us__wrapper">
+                                    <a class="follow-us__logo" href="#">
+                                        <img src="img/logo.svg" width="30" height="26" alt="logo footer">
+                                        <p class="follow-us__text">Shape<span>Up</span></p>
+                                    </a>
+                                    <p class="follow-us__description">
+                                        Maecenas rhoncus ipsum non nisi finibus maximus. In hac habitasse platea dictumst.
+                                        Aenean purus eros.
+                                    </p>
+                                </div>
+                                <div class="follow-us__container icons">
+                                    <p class="icons__title">Follow Us</p>
+                                    <ul class="icons__list">
+                                        <li class="icons__item icons__item--fb"><a href="#">facaboock</a></li>
+                                        <li class="icons__item icons__item--twitter"><a href="#">twitter</a></li>
+                                        <li class="icons__item icons__item--inst"><a href="#">instagram</a></li>
+                                        <li class="icons__item icons__item--youtube"><a href="#">youtube</a></li>
+                                        <li class="icons__item icons__item--vimeo"><a href="#">vimeo</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="social__item address">
+                                <p class="address__title">Quick Contacts</p>
+                                <ul class="address__list">
+                                    <li class="address__item address__item--location">23, George Washington Street,<br> New York, USA, 09567</li>
+                                    <li class="address__item address__item--phone">+1 957 652 1268</li>
+                                    <li class="address__item address__item--mail">info@shapeup.com</li>
+                                    <li class="address__item address__item--website">www.shapeup.com</li>
+                                </ul>
+                            </li>
+                            <li class="social__item tags">
+                                <p class="tags__title">Popular Search Tags</p>
+                                <ul class="tags__list">
+                                    <li class="tags__item">Workout</li>
+                                    <li class="tags__item">Spa</li>
+                                    <li class="tags__item">Schedule</li>
+                                    <li class="tags__item">Weightlifing</li>
+                                    <li class="tags__item">Boxing</li>
+                                    <li class="tags__item">Yoga</li>
+                                    <li class="tags__item">Location</li>
+                                    <li class="tags__item">Trainers</li>
+                                    <li class="tags__item">Class</li>
+                                    <li class="tags__item">Equipments</li>
+                                    <li class="tags__item">Nutrition</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="main-footer__wrapper">
+                        <a class="main-footer__logo" href="#">
+                            <img class="main-footer__image" src="img/logo.svg" width="30" height="26" alt="site logo">
+                            <span class="main-footer__text">Shape<span class="main-footer__text--red">Up</span></span>
+                        </a>
+                        <ul class="main-footer__list">
+                            <li class="main-footer__item"><a href="#">Home</a></li>
+                            <li class="main-footer__item"><a href="#">About</a></li>
+                            <li class="main-footer__item"><a href="#">Trainers</a></li>
+                            <li class="main-footer__item"><a href="#">Service</a></li>
+                            <li class="main-footer__item"><a href="#">Reviews</a></li>
+                            <li class="main-footer__item"><a href="#">Price</a></li>
+                            <li class="main-footer__item"><a href="#">Price</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!--<script src="js/libs.min.js"></script>-->
+        <script src="js/main.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>
