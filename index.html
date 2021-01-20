@@ -2,39 +2,61 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
     <title>portfolio</title>
+
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header class="page-header">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="logo site" width="25" height="35">
-          Portfolio
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse page-header__container" id="navbarNav">
-          <ul class="navbar-nav page-header__list">
-            <li class="nav-item page-header__item page-header__item--active">
-              <a class="nav-link" href="#">Мої роботи</a>
-            </li>
-            <li class="nav-item page-header__item">
-              <a class="nav-link" href="#">Про мене</a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <nav class="page-header__navbar">
+              <ul class="navbar__list">
+                <li class="navbar__item">
+                  <a href="#" class="navbar__icon">
+                    <i class="navbar__fas navbar__fas--google"></i>
+                  </a>
+                  <p class="navbar__text" href="#">vasylskib@gmail.com</p>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__icon">
+                    <i class="navbar__fas navbar__fas--github"></i>
+                  </a>
+                  <p class="navbar__text" href="#">https://skib4kvasyl.github.io/</p>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__icon">
+                    <i class="navbar__fas navbar__fas--number"></i>
+                  </a>
+                  <p class="navbar__text" href="#">+38(096)-016-32-72</p>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__icon">
+                    <i class="navbar__fas navbar__fas--faceboock"></i>
+                  </a>
+                  <p class="navbar__text" href="#">https://www.facebook.com/skibchyk.vasyl</p>
+                </li>
+                <li class="navbar__item">
+                  <a href="#" class="navbar__icon">
+                    <i class="navbar__fas navbar__fas--skype"></i>
+                  </a>
+                  <p class="navbar__text" href="#">live:.cid.2bb1533853eadd8b</p>
+                </li>
+              </ul>
+          </nav>
         </div>
-      </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -42,91 +64,130 @@
         <div class="row">
           <ul class="work__list">
             <li class="work__item work__item--gidro">
-              <img src="img/gidro.jpg" class="work__image" width="360" height="250" alt="Сайт продажу гідроциклів">
+              <picture>
+                <source srcset="img/gidro-mobile.jpg" media="(max-width: 400px)">
+                <img src="img/gidro.jpg" class="work__image" width="360" height="250" alt="Сайт продажу гідроциклів">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Сбока Gulp. Адаптивний. Многостраничный сайт.</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/gidro/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--agro">
-                <img src="img/agro.jpg" class="work__image" width="360" height="250" alt="Сайт органічної їжі">
+              <picture>
+                <source srcset="img/agro-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/agro.jpg" class="work__image" width="360" height="250" alt="Сайт органічної їжі">
+              </picture>
                 <div class="work__container">
                   <p class="work__title">Сбока Gulp. Landing page. Есть мобильна версия</p>
                   <a class="work__link" href="https://skib4kvasyl.github.io/agro/">Посмотреть</a>
                 </div>
             </li>
             <li class="work__item work__item--sport">
-              <img src="img/sport.jpg" class="work__image" width="360" height="250" alt="Спортивний сайт">
+              <picture>
+                <source srcset="img/sport-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/sport.jpg" class="work__image" width="360" height="250" alt="Спортивний сайт">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Сбока Gulp. Адаптивний. Landing page</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/sport/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--cat-energy">
-              <img src="img/cat-energy.jpg" width="360" height="250" alt="Харчування для котів">
+              <picture>
+                <source srcset="img/cat-energy-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/cat-energy.jpg" width="360" height="250" alt="Харчування для котів">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Адаптивний. Многостраничник. Макет взято з курсов HTML Academy</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/cat-energy/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--pirosmani">
-              <img src="img/pirosmani.jpg" width="360" height="250" alt="Сайт магазина піросмані">
+              <picture>
+                <source srcset="img/pirosmani-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/pirosmani.jpg" width="360" height="250" alt="Сайт магазина піросмані">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Сбока Gulp. Есть мобильна версия. Многостраничный сайт.</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/pirosmani/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--nevertum">
-              <img src="img/nevertum.jpg" width="360" height="250" alt="Сайт з назвою nevertum">
+              <picture>
+                <source srcset="img/nevertum-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/nevertum.jpg" width="360" height="250" alt="Сайт з назвою nevertum">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Сбока Gulp. Landing page. Есть мобильна версия</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/neventum/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--bussines">
-                <img src="img/bussines.jpg" width="360" height="250" alt="Сайт для бізнесу">
+              <picture>
+                <source srcset="img/bussines-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/bussines.jpg" width="360" height="250" alt="Сайт для бізнесу">
+              </picture>
                 <div class="work__container">
                   <p class="work__title">Сбока Gulp. Landing page. Есть мобильна версия</p>
                   <a class="work__link" href="https://skib4kvasyl.github.io/bussines/">Посмотреть</a>
                 </div>
             </li>
             <li class="work__item work__item--mishka">
-                <img src="img/mishka.jpg" width="360" height="250" alt="Іграшки ручної роботи">
+              <picture>
+                <source srcset="img/mishka-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/mishka.jpg" width="360" height="250" alt="Іграшки ручної роботи">
+              </picture>
                 <div class="work__container">
                   <p class="work__title">Адаптивний сайт. Многостраничник. Макет взято з курсов HTML Academy</p>
                   <a class="work__link" href="https://skib4kvasyl.github.io/mishka/">Посмотреть</a>
                 </div>
             </li>
             <li class="work__item work__item--basket">
-              <img src="img/basket.jpg" width="360" height="250" alt="Сайт з назвою nevertum">
+              <picture>
+                <source srcset="img/basket-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/basket.jpg" width="360" height="250" alt="Сайт з назвою nevertum">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Сбока Gulp. Многостраничный сайт</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/basket/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--market">
-              <img src="img/market.jpg" width="360" height="250" alt="Сайт з назвою nevertum">
+              <picture>
+                <source srcset="img/market-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/market.jpg" width="360" height="250" alt="Сайт з назвою nevertum">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Сбока Gulp. Landing page</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/market/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--gllacy">
-                <img src="img/gllacy.jpg" width="360" height="250" alt="Магазин морозива">
+              <picture>
+                <source srcset="img/gllacy-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/gllacy.jpg" width="360" height="250" alt="Магазин морозива">
+              </picture>
                 <div class="work__container">
                   <p class="work__title">Двостраничник. Главна и каталог товаров. Макет взято з курсов HTML Academy</p>
                   <a class="work__link" href="https://skib4kvasyl.github.io/gllacy/">Посмотреть</a>
                 </div>
             </li>
             <li class="work__item work__item--food">
-              <img src="img/food.jpg" width="360" height="250" alt="Магазин морозива">
+              <picture>
+                <source srcset="img/food-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/food.jpg" width="360" height="250" alt="Фруктовий сад">
+              </picture>
               <div class="work__container">
                 <p class="work__title">Сбока Gulp. Landing page</p>
                 <a class="work__link" href="https://skib4kvasyl.github.io/food/">Посмотреть</a>
               </div>
             </li>
             <li class="work__item work__item--device">
-                <img src="img/device.jpg" width="360" height="250" alt="Магазин техніки">
+              <picture>
+                <source srcset="img/device-mobile.jpg" media="(max-width: 400px)">
+                  <img src="img/device.jpg" width="360" height="250" alt="Магазин техніки">
+              </picture>
                 <div class="work__container">
                   <p class="work__title">Двостраничник. Главна и каталог товаров. Макет взято з курсов HTML Academy</p>
                   <a class="work__link" href="https://skib4kvasyl.github.io/device/">Посмотреть</a>
