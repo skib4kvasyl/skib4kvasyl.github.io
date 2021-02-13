@@ -4,7 +4,7 @@ $('.categories__list').slick({
     slidesToScroll: 1,
     arrows: true,
     responsive: [{
-        breakpoint: 375,
+        breakpoint: 420,
         settings: {
             slidesToShow: 4,
             arrows: false
@@ -16,7 +16,7 @@ $('.slider-reviews').slick({
     slidesToShow: 2,
     slidesToScroll: 1,
     responsive: [{
-        breakpoint: 375,
+        breakpoint: 420,
         settings: {
             slidesToShow: 1
         }
